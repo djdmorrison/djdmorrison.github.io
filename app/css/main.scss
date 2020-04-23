@@ -111,23 +111,33 @@ p {
         border: 1px solid $blue-green;
         text-decoration: none;
         transform: translateY(-3px);
-        #image {
-            background: url('../images/login.gif');
-            background-size: cover;
-        }
     }
-    #image {
+    .image {
         height: 180px;
         width: 100%;
         margin: 20px 0 20px;
-        background: url('../images/login1.gif');
         background-size: cover;
-    }
-    #image-preload {
-        background: url('../images/login.gif') no-repeat -9999px -9999px;
     }
     p {
         font-size: 0.9em;
+    }
+
+    &#work-login {
+        .image {
+            background-image: url('../images/login1.gif');
+        }
+    }
+
+    &#work-dungeon {
+        .image {
+            background-image: url('../images/dungeon.png');
+        }
+    }
+
+    &#work-icon {
+        .image {
+            background-image: url('../images/icon.png');
+        }
     }
 }
 
@@ -135,11 +145,13 @@ p {
     font-size: 0.7em;
     padding: 5px;
     color: white;
-    font-weight: 400;
+    font-weight: 700;
     &.badge-pen { background-color: $outer-space; }
     &.badge-css { background-color: $deep-safron; }
+    &.badge-wip { background-color: $rose-madder; }
+    &.badge-game { background-color: $blue-green; }
+    &.badge-angularjs { background-color: $nickel; }
 }
-
 
 @media(max-width: 768px) {
     #work-container {
